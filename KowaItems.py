@@ -1,3 +1,8 @@
+'''
+参考サイト
+https://note.nkmk.me/python-pandas-query/
+'''
+
 import pandas as pd
 
 
