@@ -14,11 +14,13 @@ df = pd.read_excel('data/3.15_製品データベース.xlsx',encoding="UTF-8")
 '''
 
 size1 = 60
-size2 = 60
-cable = '銅'
+size2 = 38
+cable = 'アルミ'
 
 size = (df.query('min1 <= @size1 & max1 >= @size1 & min2 <= @size2 & max2 >= @size2'))
 print(size.query('cable.str.contains(@cable)', engine='python'))
 
 
-
+'''
+空白な変数がある場合はその絞り込みを無効にする。ってしたい
+'''
