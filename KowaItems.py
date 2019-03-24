@@ -18,8 +18,8 @@ df = pd.read_excel('data/3.20_製品データベース_test.xlsx',encoding="UTF-
 この３つの条件で、size1（本線）とsize2（分岐線）の組み合わせが使えるアルミ線用の製品を抽出
 '''
 
-size1 = 60
-size2 = 38
+size1 = 38
+size2 = 5
 cable = 'アルミ'
 
 size = (df.query('min1 <= @size1 & max1 >= @size1 & min2 <= @size2 & max2 >= @size2'))
